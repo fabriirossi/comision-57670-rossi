@@ -1,0 +1,43 @@
+@media (max-width: 986px){
+    .logo {
+        gap: 10px;
+        h1{
+            font-family: capitan;
+            font-size: 40px;
+        }
+    }
+    .navbar {
+        ul {
+            gap: 10px;
+            font-size: 14px;
+        }
+    }
+    .buscador{
+        input{
+            font-size: 12px;
+        }
+    }
+    .cancion-5, .c-album-5{
+        display: none;
+    }
+    .reproductor-info{
+        h3{
+            width: 250px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            line-clamp: 1;
+            overflow: hidden;
+            font-size: 15px;
+        }
+        p{
+            width: 250px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            line-clamp: 1;
+            overflow: hidden;
+            font-size: 12px;
+        }
+    }
+}

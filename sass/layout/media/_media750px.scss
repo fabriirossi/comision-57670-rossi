@@ -1,0 +1,44 @@
+@media (max-width: 750px){
+    .estreno-inf{
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .cancion-4, .c-album-4{
+        display: none;
+    }
+    .cancion-info{
+        h4{
+            font-size: 18px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .informacion{
+        font-size: 14px;
+    }
+    .shuffle, .repeat, .volume, .lyrics, .queue, .device{
+        font-size: 14px;
+    }
+    .previous, .next{
+        img{
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+    }
+    .play{
+        img{
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+    }
+    .controles-extra{
+        font-size: 12px;
+    }
+}

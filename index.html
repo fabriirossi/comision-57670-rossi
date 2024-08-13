@@ -9,260 +9,323 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="assets/img/ico-arg.png">
 </head>
-<body>
-    <header class="headerr">
-        <a href="#"><h1>ARG Music</h1></a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="pages/nosotros.html">Nosotros</a></li>
-                <li><a href="pages/albumes.html">Álbumes</a></li>
-                <li><a href="pages/exitos.html">Últimos éxitos</a></li>
-                <li><a href="pages/nuevo.html">Lo más nuevo</a></li>
-            </ul>
-        </nav>
-        <form action="">
-            <label for="buscador"></label>
-            <input class="buscador" type="search" name="buscador" id="buscador" placeholder="Buscar música">
-            <input type="submit" value="Buscar">
-        </form>
+<body class="body">
+    <header class="header">
+        <div class="logo">
+            <h1>ARG Music</h1>
+            <a href="#"><img src="./assets/img/ico-arg.png" alt="icono de la página argmusic"></a>
+        </div>
+        <div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="pages/albumes.html">Álbumes</a></li>
+                    <li><a href="pages/exitos.html">Últimos éxitos</a></li>
+                    <li><a href="pages/nuevo.html">Lo más nuevo</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <form class="buscador" action="">
+                <label for="buscador"></label>
+                <input type="search" name="buscador" id="buscador" placeholder="Buscar música">
+            </form>
+        </div>
     </header>
-    <main>
+    <main class="main">
+        <section class="estrenos">
+            <h2>Estrenos</h2>
+            <section class="contenedor-estrenos">
+                <div class="estreno">
+                    <a href="https://open.spotify.com/prerelease/6WeZGh5jMu3yz6oHqbvRwb?si=a577071581a14586" class="divi" target="_blank">
+                        <div class="estreno-img">
+                            <img src="./assets/img/portadas-album/la-pantera-negra.jpg" alt="La pantera negra">
+                        </div>
+                        <div class="estreno-inf">
+                            <h3>La Pantera Negra</h3>
+                            <p>Myke Towers</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="estreno">
+                    <a href="https://open.spotify.com/album/0FYZn1AI7Fly7H25Vykc64?si=1gHQZpZkSOux2WLcU08xeg" target="_blank">
+                        <div class="estreno-img">
+                            <img src="./assets/img/portadas-album/cien-gigs.jpg" alt="100 GIGS">
+                        </div>
+                        <div class="estreno-inf">
+                            <h3>100 GIGS</h3>
+                            <p>Drake</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="estreno">
+                    <a href="https://open.spotify.com/album/2RRYaYHY7fIIdvFlvgb5vq?si=kmyh20e1SyO_eCfZGqb14Q" target="_blank">
+                        <div class="estreno-img">
+                            <img src="./assets/img/portadas-album/american-dream.jpg" alt="">
+                        </div>
+                        <div class="estreno-inf">
+                            <h3>American Dream</h3>
+                            <p>21 Savage</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </section>
         <section class="seccion-canciones">
-            <h3><a href="pages/nuevo.html" class="new">Lo más nuevo!</a></h3>
-            <article class="contenedor-canciones">
-                <div class="cancion">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a" target="_blank">
-                            <img src="assets/img/portada-brytiago.jpg" alt="álbum brytiago">
+            <h3><a href="pages/nuevo.html">Lo más nuevo!</a></h3>
+            <section class="contenedor-canciones">
+                <div class="cancion cancion-1">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/intl-es/track/4gHUh2QgNXZ7uRBJDCY4jp?si=6335cee39e7b4bd5" target="_blank">
+                            <img src="./assets/img/portada-canciones/alokate-remake.jpg" alt="Alokate Remake">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Luna - (Remix)</h4>
-                        <p>Brytiago, Cosculluela, Justin Quiles</p>
+                    <div class="cancion-info">
+                        <h4>Alokate Remake</h4>
+                        <p>Alejandro Castro</p>
                     </div>
                 </div>
-                <div class="cancion">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-viceversa.jpg" alt="álbum viceversa rauw alejandro">
+                <div class="cancion cancion-2">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/intl-es/track/3kG1jgWIDmjJkXhOiOmioO?si=d8bd6400f25b4da9" target="_blank">
+                            <img src="./assets/img/portada-canciones/dime-si-te-acuerdas.jpg" alt="Dime si te acuerdas">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>2/Catorce</h4>
-                        <p>Rauw Alejandro, Mr.Naisgai</p>
+                    <div class="cancion-info">
+                        <h4>Dime si te acuerdas</h4>
+                        <p>Bad Bunny</p>
                     </div>
                 </div>
                 <div class="cancion cancion-3">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-playasaturno.jpg" alt="álbum playasaturno">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/intl-es/track/1oP4qehV9MBDaA89mfb1HR?si=34eb8eb6b87c4c79" target="_blank">
+                            <img src="./assets/img/portada-canciones/air-drop.jpg" alt="Air Drop">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Diluvio</h4>
-                        <p>Rauw Alejandro</p>
+                    <div class="cancion-info">
+                        <h4>Air Drop</h4>
+                        <p>Bryant Myers</p>
                     </div>
                 </div>
                 <div class="cancion cancion-4">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a" target="_blank">
-                            <img src="assets/img/portada-brytiago.jpg" alt="álbum brytiago">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/track/6XzhST5xE0p7RqbdSskz3f?si=a82a81d1c552415d" target="_blank">
+                            <img src="./assets/img/portada-canciones/rompe-cabezas.jpg" alt="Rompe Cabezas">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Luna - (Remix)</h4>
-                        <p>Brytiago, Cosculluela, Justin Quiles</p>
+                    <div class="cancion-info">
+                        <h4>Rompe Cabezas</h4>
+                        <p>Casper, Nio Garcia, Lary Over, Rauw Alejandro</p>
                     </div>
                 </div>
                 <div class="cancion cancion-5">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-viceversa.jpg" alt="álbum viceversa rauw alejandro">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/track/2xesu70KZ2LlE6295hclOH?si=3dbeffdb6f17468d" target="_blank">
+                            <img src="./assets/img/portada-canciones/desnuda.jpg" alt="Desnuda">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>2/Catorce</h4>
-                        <p>Rauw Alejandro, Mr.Naisgai</p>
+                    <div class="cancion-info">
+                        <h4>Desnuda</h4>
+                        <p>Jory Boy, Alex Rose</p>
                     </div>
                 </div>
                 <div class="cancion cancion-6">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-playasaturno.jpg" alt="álbum playasaturno">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/track/1mohfLaTJtB2RplHLQVM70?si=b8f459957e6f46fc" target="_blank">
+                            <img src="./assets/img/portada-canciones/la-jeepeta.jpg" alt="La Jeepeta">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Diluvio</h4>
-                        <p>Rauw Alejandro</p>
+                    <div class="cancion-info">
+                        <h4>La Jeepeta - (Remix)</h4>
+                        <p>Nio Garcia, Anuel AA, Myke Towers, Brray, Juanka</p>
                     </div>
                 </div>
-            </article>
+            </section>
         </section>
         </div>
         <section class="seccion-canciones">
             <h3><a href="pages/exitos.html">Últimos éxitos!</a></h3>
-            <article class="contenedor-canciones">
-                <div class="cancion">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a" target="_blank">
-                            <img src="assets/img/portada-easymoneybaby.jpg" alt="álbum myke towers easy money baby">
+            <section class="contenedor-canciones">
+                <div class="cancion cancion-1">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/track/5nwyEwu6ngrjZ9tkbvfqbp?si=db4948f5921143ab" target="_blank">
+                            <img src="./assets/img/portada-canciones/que-se-freezen-los-relojes.jpg" alt="Que se freezen los relojes">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Luna - (Remix)</h4>
-                        <p>Brytiago, Cosculluela, Justin Quiles</p>
+                    <div class="cancion-info">
+                        <h4>Que se freezen los relojes</h4>
+                        <p>Jon Z, Myke Towers</p>
                     </div>
                 </div>
-                <div class="cancion">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-viceversa.jpg" alt="álbum viceversa rauw alejandro">
+                <div class="cancion cancion-2">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/intl-es/track/0PB0O24JqAuNdOAFVJljMS?si=c25a164b1bcd4873" target="_blank">
+                            <img src="./assets/img/portada-canciones/coco-chanel.jpg" alt="Coco Chanel">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>2/Catorce</h4>
-                        <p>Rauw Alejandro, Mr.Naisgai</p>
+                    <div class="cancion-info">
+                        <h4>Coco Chanel</h4>
+                        <p>Eladio Carrion, Bad Bunny</p>
                     </div>
                 </div>
                 <div class="cancion cancion-3">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-playasaturno.jpg" alt="álbum playasaturno">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/intl-es/track/7DOh0tBGnyMt6C5OO7o8Yq?si=9e33e772226d493b" target="_blank">
+                            <img src="./assets/img/portada-canciones/nada.jpg" alt="Nada">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Diluvio</h4>
-                        <p>Rauw Alejandro</p>
+                    <div class="cancion-info">
+                        <h4>Nada</h4>
+                        <p>Cazzu, Lyanno, Rauw Alejandro, Dalex</p>
                     </div>
                 </div>
                 <div class="cancion cancion-4">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a" target="_blank">
-                            <img src="assets/img/portada-easymoneybaby.jpg" alt="álbum myke towers easy money baby">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/intl-es/track/25ZAibhr3bdlMCLmubZDVt?si=3fd24711cf444db3" target="_blank">
+                            <img src="./assets/img/portada-canciones/que-pretendes.jpg" alt="Que Pretendes">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Luna - (Remix)</h4>
-                        <p>Brytiago, Cosculluela, Justin Quiles</p>
+                    <div class="cancion-info">
+                        <h4>Que Pretendes</h4>
+                        <p>J Balvin, Bad Bunny</p>
                     </div>
                 </div>
                 <div class="cancion cancion-5">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-viceversa.jpg" alt="álbum viceversa rauw alejandro">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/track/3gE4eQH3K83Sght0ZLvuBK?si=52b55ffb9b3642ff" target="_blank">
+                            <img src="./assets/img/portada-canciones/mia.jpg" alt="Mia">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>2/Catorce</h4>
-                        <p>Rauw Alejandro, Mr.Naisgai</p>
+                    <div class="cancion-info">
+                        <h4>Mia (feat. Drake)</h4>
+                        <p>Bad Bunny, Drake</p>
                     </div>
                 </div>
                 <div class="cancion cancion-6">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-playasaturno.jpg" alt="álbum playasaturno">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/track/2gpQi3hbcUAcEG8m2dlgfB?si=9924271cbaa24c9d" target="_blank"> 
+                            <img src="./assets/img/portada-canciones/plan-a.jpg" alt="Plan A">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Diluvio</h4>
-                        <p>Rauw Alejandro</p>
+                    <div class="cancion-info">
+                        <h4>Plan A</h4>
+                        <p>Paulo Londra</p>
                     </div>
                 </div>
-            </article>
+            </section>
         </section>
         <section class="seccion-canciones">
             <h3><a href="pages/albumes.html">Álbumes</a></h3>
-            <article class="contenedor-canciones">
+            <section class="contenedor-canciones">
                 <div class="cancion">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a" target="_blank">
-                            <img src="assets/img/portada-easymoneybaby.jpg" alt="álbum myke towers easy money baby">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/album/3dM5WCvdXdNqLE14d16GmJ?si=kzu8xvrQSmCBODPwYtYUUQ" target="_blank">
+                            <img src="./assets/img/portadas-album/easymoneybaby.jpg" alt="Easy Money Baby">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Luna - (Remix)</h4>
-                        <p>Brytiago, Cosculluela, Justin Quiles</p>
+                    <div class="cancion-info">
+                        <h4>Easy Money Baby</h4>
+                        <p>Myke Towers</p>
                     </div>
                 </div>
                 <div class="cancion">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-viceversa.jpg" alt="álbum viceversa rauw alejandro">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/album/6E7Awtyx6opYTbPXx6ApzB?si=N0M5Pi4HTr6qo4NyzYgsgA" target="_blank">
+                            <img src="./assets/img/portadas-album/playasaturno.jpeg" alt="Playa Saturno">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>2/Catorce</h4>
-                        <p>Rauw Alejandro, Mr.Naisgai</p>
+                    <div class="cancion-info">
+                        <h4>Playa Saturno</h4>
+                        <p>Rauw Alejandro</p>
                     </div>
                 </div>
                 <div class="cancion cancion-3">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-playasaturno.jpg" alt="álbum playasaturno">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/album/4FftCsAcXXD1nFO9RFUNFO?si=1wIKAjfrROSySlYMoHDOBw" target="_blank">
+                            <img src="./assets/img/portadas-album/nadie-sabe-lo-que-va-a-pasar-mañana.jpg" alt="Nadie sabe lo que va a pasar mañana">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Diluvio</h4>
-                        <p>Rauw Alejandro</p>
+                    <div class="cancion-info">
+                        <h4>Nadie sabe lo que va a pasar mañana</h4>
+                        <p>Bad Bunny</p>
                     </div>
                 </div>
                 <div class="cancion cancion-4">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a" target="_blank">
-                            <img src="assets/img/portada-easymoneybaby.jpg" alt="álbum myke towers easy money baby">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/album/4s05NbwGgw5SO42AdsN5Oo?si=bmqSGvNIR1a07EuSK3C6fA" target="_blank">
+                            <img src="./assets/img/portadas-album/odisea.jpg" alt="odisea">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Luna - (Remix)</h4>
-                        <p>Brytiago, Cosculluela, Justin Quiles</p>
+                    <div class="cancion-info">
+                        <h4>Odisea</h4>
+                        <p>Ozuna</p>
                     </div>
                 </div>
                 <div class="cancion cancion-5">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-viceversa.jpg" alt="álbum viceversa rauw alejandro">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/album/7c3cZS4ScoPCEmtZFIPqLF?si=8l_VNqo6Qruf7TQGMzsQ9w" target="_blank">
+                            <img src="./assets/img/portadas-album/enr.jpg" alt="enr">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>2/Catorce</h4>
-                        <p>Rauw Alejandro, Mr.Naisgai</p>
+                    <div class="cancion-info">
+                        <h4>ENR</h4>
+                        <p>Alex Rose</p>
                     </div>
                 </div>
                 <div class="cancion cancion-6">
-                    <div class="cancion cancion-imagen">
-                        <a href="assets/audio/audioprueba.m4a">
-                            <img src="assets/img/portada-playasaturno.jpg" alt="álbum playasaturno">
+                    <div class="cancion-imagen">
+                        <a href="https://open.spotify.com/album/37rUi63O4koMFvrSC1EMam?si=Dn49NGGyR7q_gKPMna6S3w" target="_blank">
+                            <img src="./assets/img/portadas-album/trapcake.jpg" alt="trap cake">
                         </a>
                     </div>
-                    <div class="cancion cancion-info">
-                        <h4>Diluvio</h4>
+                    <div class="cancion-info">
+                        <h4>Trap Cake</h4>
                         <p>Rauw Alejandro</p>
                     </div>
                 </div>
-            </article>
+            </section>
         </section>
-        <section>
-            <div class="botones">
-                <button class="btn btn-outline-secondary">Atras</button>
-                <button class="btn btn-outline-secondary">Reproducir</button>
-                <button class="btn btn-outline-secondary">Adelantar</buttons>
-            </div>
+        <section class="informacion">
+                <div>
+                    <p><a href="./pages/nosotros.html">Sobre nosotros</a></p>
+                    <p>Soporte</p>
+                    <p>Cookies</p>
+                </div>
+                <div>
+                    <p>Política de privacidad</p>
+                    <p>Accesibilidad</p>
+                    <p>&copy; 2024 ARG Music. Todos los derechos reservados.</p>
+                </div>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </main>
     <footer class="footerr">
-        <div class="footer-seccion">
-            <p><a href="./pages/nosotros.html">Sobre nosotros</a></p>
-            <p>Soporte</p>
-            <p>Cookies</p>
-        </div>
-        <div class="footer-seccion">
-            <p>Política de privacidad</p>
-            <p>Accesibilidad</p>
-            <p>&copy; 2024 ARG Music. Todos los derechos reservados.</p>
-        </div>
+        <section class="reproductor">
+            <div class="repro-info">
+                <div class="reproductor-imagen">
+                    <img src="./assets/img/portada-canciones/explicale-remix.jpg" alt="Explícale">
+                </div>
+                <div class="reproductor-info">
+                    <h3>Explícale (feat. Cosculluela & Brytiago) - Remix</h3>
+                    <p>Yandel, Bad Bunny, Noriel, Cosculluela, Brytiago</p>
+                </div>
+            </div>
+            <div class="controles">
+                <button class="control-btn shuffle"><img src="./assets/img/controls/shuffle.png" alt="Icono de aleatorio"></button>
+                <button class="control-btn previous">PREV</button>
+                <button class="control-btn play"><img src="./assets/img/controls/play.png" alt="Icono de reproducción"></button>
+                <button class="control-btn next">NEXT</button>
+                <button class="control-btn repeat"><img src="./assets/img/controls/repeat.png" alt="Icono de repetición"></button>
+            </div>
+            <div class="controles-extra">
+                <button class="extra-btn lyrics"><img src="./assets/img/controls/lyrics.png" alt="Icono de letra"></button>
+                <button class="extra-btn queue"><img src="./assets/img/controls/queue.png" alt="Icono de cola"></button>
+                <button class="extra-btn device"><img src="./assets/img/controls/device.png" alt="Icono de dispositivo"></button>
+                <button class="extra-btn volume"><img src="./assets/img/controls/volumen.png" alt="Icono de volumen"></button>
+            </div>
+        </section>
     </footer>
 </body>
 </html>

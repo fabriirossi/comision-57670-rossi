@@ -1,0 +1,25 @@
+.estrenos{
+    padding: 16px;
+}
+.contenedor-estrenos{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.estreno{
+    padding: 16px;
+    border-radius: 16px;
+    height: 395px;
+    width: auto;
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.109);
+    }
+}
+.estreno-img{
+    img{
+        border-radius: 16px;
+    }
+}
+.estreno-inf{
+    padding-top: 10px;
+}

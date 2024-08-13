@@ -1,245 +1,437 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*utilities*/
+/*base*/
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: capitan;
+  src: url(../assets/fonts/american-captain.ttf); }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.headerr{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.navbar ul{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 a {
-    text-decoration: none;
-    color: white;
-}
+  color: #ECF0F1;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
-a:hover {
-    text-decoration: underline;
-}
+.body {
+  background-color: black;
+  color: #ECF0F1;
+  font-family: "Poppins", sans-serif; }
 
-body {
-    background-color: rgb(20, 20, 20);
-    color: #ECF0F1;
-    font-family: "Poppins", sans-serif;
-}
+/*layout*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 16px;
+  background-color: #141414; }
 
-.seccion-canciones{
-    background-color: rgba(27, 27, 27, 0.568);
-    border-radius: 8px;
-    margin: 0px 20px 20px 20px;
-    padding: 12px 15px 0px 15px;
-}
+.main {
+  margin: 10px;
+  background-color: #141414;
+  padding: 15px;
+  border-radius: 16px; }
+
+.footerr {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 16px; }
+
+/*components*/
+.informacion {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px; }
+
+.reproductor {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 20px; }
+
+.repro-info {
+  display: flex;
+  gap: 10px; }
+
+.reproductor-imagen {
+  width: 60px;
+  height: 60px; }
+  .reproductor-imagen img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; }
+
+.reproductor-info h3 {
+  font-size: 18px;
+  font-weight: 400; }
+
+.reproductor-info p {
+  font-size: 14px;
+  font-weight: 200; }
+
+.controles, .controles-extra {
+  gap: 14px;
+  display: flex;
+  align-items: center; }
+
+.shuffle img, .repeat img, .volume img, .lyrics img, .queue img, .device img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain; }
+
+.previous, .next {
+  font-size: 22px; }
+
+.play img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain; }
+
+.control-btn, .extra-btn {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  margin: 0 5px;
+  cursor: pointer; }
+  .control-btn:hover, .extra-btn:hover {
+    filter: drop-shadow(0 0 0.75rem crimson); }
+
+.logo {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  align-items: center; }
+  .logo h1 {
+    font-family: capitan;
+    font-size: 50px;
+    margin: 8px; }
+  .logo a {
+    width: 60px;
+    height: 60px; }
+    .logo a img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+
+.navbar {
+  padding-right: 8px; }
+  .navbar ul {
+    display: flex;
+    gap: 20px; }
+    .navbar ul li {
+      list-style: none; }
+
+.buscador input {
+  background-color: #333;
+  color: #ddd;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: none; }
+
+.buscador::before {
+  content: "BS";
+  margin-right: 10px; }
+
+.estrenos {
+  padding: 16px; }
+
+.contenedor-estrenos {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between; }
+
+.estreno {
+  padding: 16px;
+  border-radius: 16px;
+  height: 395px;
+  width: auto; }
+  .estreno:hover {
+    background-color: rgba(255, 255, 255, 0.109); }
+
+.estreno-img img {
+  border-radius: 16px; }
+
+.estreno-inf {
+  padding-top: 10px; }
+
+.seccion-canciones {
+  padding: 16px; }
 
 .contenedor-canciones {
-    display: grid;
-    grid-template-columns: repeat(6, 180px);
-    justify-content: space-between;
-}
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px; }
 
-.cancion{
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 2px;
-}
+.cancion {
+  width: 200px;
+  height: 280px;
+  padding: 16px; }
+  .cancion:hover {
+    background-color: rgba(255, 255, 255, 0.109);
+    border-radius: 16px; }
 
-.cancion:hover{
-    background-color:rgba(119, 136, 153, 0.199);
-}
-
-.cancion-imagen a{
-    margin: 2px;
-    width: 168px;
-    height: 168px;
-}
-
-.cancion-imagen a img{
-    border-radius: 12px;
+.cancion-imagen {
+  width: 100%;
+  height: 60%; }
+  .cancion-imagen a img {
     width: 100%;
-    object-fit: contain;
-}
+    height: 100%;
+    border-radius: 16px;
+    object-fit: contain; }
 
-.cancion-info h4{
+.cancion-info {
+  padding-top: 6px; }
+  .cancion-info h4 {
+    font-size: 20px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 2; }
+  .cancion-info p {
     font-size: 16px;
-    color: lightgreen;
-}
+    font-weight: 200;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 2; }
 
-.cancion-info p{
-    font-size: 14px
-}
+.usuarios div {
+  display: flex;
+  font-size: 30px;
+  gap: 18px;
+  align-items: center;
+  padding: 10px; }
+  .usuarios div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: contain; }
 
+/*media
+desktop -> mobile: decreciente.
+mobile -> desktop: creciente.
+*/
+@media (max-width: 1154px) {
+  .logo {
+    gap: 10px; }
+    .logo h1 {
+      font-family: capitan;
+      font-size: 45px; }
+  .navbar ul {
+    gap: 10px; }
+  .buscador input {
+    font-size: 14px; } }
 
-.botones{
-    display: flex;
-    justify-content: center;
+@media (max-width: 1086px) {
+  .cancion-6, .c-album-6 {
+    display: none; }
+  .estreno {
+    width: auto;
+    height: 350px; }
+  .estreno-img {
+    width: 100%;
+    height: 80%;
+    border-radius: 16px; }
+    .estreno-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 16px; }
+  .buscador input {
+    padding: 6px 10px;
+    font-size: 14px; }
+  .buscador::before {
+    display: none; }
+  .reproductor-info h3 {
+    font-size: 15px; }
+  .reproductor-info p {
+    font-size: 12px; }
+  .shuffle img, .repeat img, .volume img, .lyrics img, .queue img, .device img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain; }
+  .previous, .next {
+    font-size: 18px; }
+  .play img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain; } }
+
+@media (max-width: 986px) {
+  .logo {
+    gap: 10px; }
+    .logo h1 {
+      font-family: capitan;
+      font-size: 40px; }
+  .navbar ul {
     gap: 10px;
-}
+    font-size: 14px; }
+  .buscador input {
+    font-size: 12px; }
+  .cancion-5, .c-album-5 {
+    display: none; }
+  .reproductor-info h3 {
+    width: 250px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    overflow: hidden;
+    font-size: 15px; }
+  .reproductor-info p {
+    width: 250px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    overflow: hidden;
+    font-size: 12px; } }
 
-.footerr{
-    background-color: rgba(27, 27, 27, 0.568);
-    padding-top: 16px;
-    margin: 20px;
-    border-radius: 24px;
-}
+@media (max-width: 880px) {
+  .logo {
+    gap: 10px; }
+    .logo h1 {
+      font-family: capitan;
+      font-size: 35px; }
+  .navbar ul {
+    gap: 10px;
+    font-size: 12px; }
+  .buscador input {
+    font-size: 10px; }
+  .estreno-inf h3 {
+    font-size: 22px; }
+  .estreno-inf p {
+    font-size: 14px; }
+  .controles-extra {
+    font-size: 14px; } }
 
-.footer-seccion{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-}
+@media (max-width: 788px) {
+  .logo {
+    gap: 10px; }
+    .logo h1 {
+      font-family: capitan;
+      font-size: 28px; }
+    .logo a {
+      width: 45px;
+      height: 45px; }
+  .navbar ul {
+    gap: 10px;
+    font-size: 12px; }
+  .buscador input {
+    font-size: 8px; }
+  .reproductor-info h3 {
+    width: 200px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    overflow: hidden;
+    font-size: 15px; }
+  .reproductor-info p {
+    width: 200px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    overflow: hidden;
+    font-size: 12px; }
+  .controles, .controles-extra {
+    gap: 8px; } }
 
-@media(max-width:1144px){
-    .contenedor-canciones{
-        display: grid;
-        grid-template-columns: repeat(5, 180px);
-    }
-    .cancion-6{
-        display: none;
-    }
-}
+@media (max-width: 750px) {
+  .estreno-inf h3 {
+    font-size: 20px; }
+  .estreno-inf p {
+    font-size: 16px; }
+  .cancion-4, .c-album-4 {
+    display: none; }
+  .cancion-info h4 {
+    font-size: 18px; }
+  .cancion-info p {
+    font-size: 14px; }
+  .informacion {
+    font-size: 14px; }
+  .shuffle, .repeat, .volume, .lyrics, .queue, .device {
+    font-size: 14px; }
+  .previous img, .next img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain; }
+  .play img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain; }
+  .controles-extra {
+    font-size: 12px; } }
 
-@media(max-width:1000px){
-    .headerr a h1{
-        font-size: 34px;
-        width: 200px;
-    }
-    .navbar ul{
-        padding: 0px;
-    }
-    .buscador {
-        width: 100px;
-    }
-}
+@media (max-width: 724px) {
+  .logo {
+    gap: 10px; }
+    .logo h1 {
+      font-family: capitan;
+      font-size: 26px; }
+    .logo a {
+      width: 40px;
+      height: 40px; }
+  .navbar ul {
+    gap: 8px;
+    font-size: 12px; }
+  .buscador {
+    display: none; }
+  .estreno {
+    width: 200px;
+    height: 280px; }
+  .estreno-img {
+    width: 100%;
+    height: 60%;
+    border-radius: 16px; }
+    .estreno-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 16px; }
+  .estreno-inf h3 {
+    font-size: 18px; }
+  .controles, .controles-extra {
+    gap: 4px; } }
 
-@media(max-width:970px){
-    .contenedor-canciones{
-        display: grid;
-        grid-template-columns: repeat(4, 180px);
-    }
-    .cancion-5{
-        display: none;
-    }
-}
+@media (max-width: 690px) {
+  .reproductor-info h3 {
+    width: 100px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    overflow: hidden;
+    font-size: 15px; }
+  .reproductor-info p {
+    width: 100px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    overflow: hidden;
+    font-size: 12px; } }
 
-@media(max-width:872px){
-    .headerr a h1{
-        font-size: 32.5px;
-        width: 175px;
-    }
-    .headerr form{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media(max-width:792px){
-    .navbar ul{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .contenedor-canciones{
-        display: grid;
-        grid-template-columns: repeat(3, 180px);
-    }
-    .cancion-4{
-        display: none;
-    }
-}
-
-@media(max-width:695px){
-    .headerr{
-        display: grid;
-        grid-template-columns: 180px auto;
-    }
-    .headerr form input {
-        width: 100px;
-    }
-}
-
-@media(max-width:668px){
-    .contenedor-canciones{
-        display: grid;
-        grid-template-columns: repeat(3, 140px);
-    }
-    .cancion-imagen{
-        width: 140px;
-        height: 140px;
-    }
-    .cancion-imagen a{
-        width: 100%;
-        height: 90%;
-    }
-    .cancion-imagen a img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-}
-
-@media(max-width:600px){
-    .headerr{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        gap: 20px;
-    }
-}
-
-@media(max-width:490px){
-    .contenedor-canciones{
-        display: grid;
-        grid-template-columns: repeat(3, 100px);
-    }
-    .cancion-imagen{
-        width: 100px;
-        height: 100px;
-    }
-    .cancion-imagen a{
-        width: 100%;
-        height: 90%;
-    }
-    .cancion-imagen a img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-}
-
-@media(max-width:470px){
-    .headerr{
-        grid-template-columns: auto;
-    }
-    .contenedor-canciones{
-        display: grid;
-        grid-template-columns: repeat(2, 100px);
-    }
-    .cancion-3{
-        display:none;
-    }
-    .footer-seccion{
-        grid-template-columns: 180px 180px;
-        padding-left: 20px;
-    }
-}
-
-@media(max-width:404px){
-    .footer-seccion{
-        grid-template-columns: auto;
-    }
-    .botones{
-        flex-direction: column;
-        padding: 0px 10px 0px 10px;
-    }
-}
+@media (max-width: 584px) {
+  .estrenos h2 {
+    font-size: 22px; }
+  .seccion-canciones h3 {
+    font-size: 22px; } }

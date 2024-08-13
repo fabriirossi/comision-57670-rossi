@@ -1,0 +1,67 @@
+.reproductor{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+}
+.repro-info{
+    display: flex;
+    gap: 10px;
+}
+.reproductor-imagen{
+    width: 60px;
+    height: 60px;
+    img{
+        height: 100%;
+        width: 100%;;
+        object-fit: contain;
+    }
+}
+.reproductor-info{
+    h3{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 200;
+    }
+}
+.controles, .controles-extra {
+    gap: 14px;
+    display: flex;
+    align-items: center;
+}
+.shuffle, .repeat, .volume, .lyrics, .queue, .device{
+    img{
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+}
+.previous, .next{
+    font-size: 22px;
+}
+.play{
+    img{
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+}
+.control-btn, .extra-btn {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    margin: 0 5px;
+    cursor: pointer;
+    &:hover{
+        filter: drop-shadow(0 0 0.75rem crimson);
+    }
+}

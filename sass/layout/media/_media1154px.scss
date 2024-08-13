@@ -1,0 +1,19 @@
+@media (max-width: 1154px) {
+    .logo {
+        gap: 10px;
+        h1{
+            font-family: capitan;
+            font-size: 45px;
+        }
+    }
+    .navbar {
+        ul {
+            gap: 10px;
+        }
+    }
+    .buscador{
+        input{
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@media (max-width:690px){
+    .reproductor-info{
+        h3{
+            width: 100px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            line-clamp: 1;
+            overflow: hidden;
+            font-size: 15px;
+        }
+        p{
+            width: 100px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            line-clamp: 1;
+            overflow: hidden;
+            font-size: 12px;
+        }
+    }
+}

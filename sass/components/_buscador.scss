@@ -1,0 +1,14 @@
+.buscador{
+    input{
+        background-color: #333;
+        color: #ddd;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        border: none;
+    }
+    &::before {
+        content: "BS";
+        margin-right: 10px;
+    }
+}

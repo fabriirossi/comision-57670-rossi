@@ -1,0 +1,15 @@
+.usuarios{
+    div{
+        display: flex;
+        font-size: 30px;
+        gap: 18px;
+        align-items: center;
+        padding: 10px;
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            object-fit: contain;
+        }
+    }
+}
