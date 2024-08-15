@@ -38,22 +38,23 @@
     display: flex;
     align-items: center;
 }
-.shuffle, .repeat, .volume, .lyrics, .queue, .device{
-    img{
-        width: 25px;
-        height: 25px;
-        object-fit: contain;
-    }
+.menu{
+    display:none;
+}
+.shuffle, .repeat{
+    font-size: 20px;
 }
 .previous, .next{
-    font-size: 22px;
+    font-size: 24px;
 }
 .play{
-    img{
-        width: 45px;
-        height: 45px;
-        object-fit: contain;
-    }
+    font-size: 26px;
+}
+.lyrics, .queue, .device{
+    font-size: 18px;
+}
+.volume{
+    font-size: 16px;
 }
 .control-btn, .extra-btn {
     background: none;
@@ -62,6 +63,6 @@
     margin: 0 5px;
     cursor: pointer;
     &:hover{
-        filter: drop-shadow(0 0 0.75rem crimson);
+        filter: drop-shadow(0 0 1rem crimson);
     }
 }

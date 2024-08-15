@@ -1,4 +1,22 @@
 @media (max-width:584px){
+    .logo {
+        gap: 8px;
+        h1{
+            font-family: capitan;
+            font-size: 24px;
+        }
+        a{
+            width: 35px;
+            height: 35px;
+        }
+    }
+    .navbar {
+        ul {
+            padding-left: 4px;
+            gap: 8px;
+            font-size: 12px;
+        }
+    }
     .estrenos{
         h2{
             font-size: 22px;
@@ -8,5 +26,8 @@
         h3{
             font-size: 22px;
         }
+    }
+    .derechos{
+        display:inline-flex;
     }
 }

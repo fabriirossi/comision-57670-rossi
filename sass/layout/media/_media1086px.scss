@@ -34,21 +34,4 @@
             font-size: 12px;
         }
     }
-    .shuffle, .repeat, .volume, .lyrics, .queue, .device{
-        img{
-            width: 20px;
-            height: 20px;
-            object-fit: contain;
-        }
-    }
-    .previous, .next{
-        font-size: 18px;
-    }
-    .play{
-        img{
-            width: 40px;
-            height: 40px;
-            object-fit: contain;
-        }
-    }
 }

@@ -1,0 +1,33 @@
+@media (max-width: 542px){
+    .logo {
+        gap: 8px;
+        h1{
+            font-family: capitan;
+            font-size: 22px;
+        }
+        a{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .navbar {
+        ul {
+            padding-left: 4px;
+            gap: 8px;
+            font-size: 12px;
+        }
+    }
+    .controles{
+        padding-right: 40px;
+    }
+    .menu{
+        display: block;
+        font-size: 16px;
+    }
+    /* .controles-extra{
+        padding-right: 40px;
+    } */
+    .lyrics, .queue, .device, .volume{
+        display: none;
+    }
+}

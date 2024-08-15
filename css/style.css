@@ -48,6 +48,8 @@ a {
   justify-content: space-between;
   margin-bottom: 20px;
   gap: 20px; }
+  .informacion div p {
+    margin-bottom: 20px; }
 
 .reproductor {
   position: fixed;
@@ -86,18 +88,23 @@ a {
   display: flex;
   align-items: center; }
 
-.shuffle img, .repeat img, .volume img, .lyrics img, .queue img, .device img {
-  width: 25px;
-  height: 25px;
-  object-fit: contain; }
+.menu {
+  display: none; }
+
+.shuffle, .repeat {
+  font-size: 20px; }
 
 .previous, .next {
-  font-size: 22px; }
+  font-size: 24px; }
 
-.play img {
-  width: 45px;
-  height: 45px;
-  object-fit: contain; }
+.play {
+  font-size: 26px; }
+
+.lyrics, .queue, .device {
+  font-size: 18px; }
+
+.volume {
+  font-size: 16px; }
 
 .control-btn, .extra-btn {
   background: none;
@@ -106,7 +113,7 @@ a {
   margin: 0 5px;
   cursor: pointer; }
   .control-btn:hover, .extra-btn:hover {
-    filter: drop-shadow(0 0 0.75rem crimson); }
+    filter: drop-shadow(0 0 1rem crimson); }
 
 .logo {
   display: flex;
@@ -147,6 +154,8 @@ a {
 
 .estrenos {
   padding: 16px; }
+  .estrenos h2 {
+    font-size: 28px; }
 
 .contenedor-estrenos {
   margin: 10px;
@@ -158,6 +167,8 @@ a {
   border-radius: 16px;
   height: 395px;
   width: auto; }
+  .estreno h3 {
+    font-size: 22px; }
   .estreno:hover {
     background-color: rgba(255, 255, 255, 0.109); }
 
@@ -169,6 +180,8 @@ a {
 
 .seccion-canciones {
   padding: 16px; }
+  .seccion-canciones h2 {
+    font-size: 28px; }
 
 .contenedor-canciones {
   margin: 10px;
@@ -262,17 +275,7 @@ mobile -> desktop: creciente.
   .reproductor-info h3 {
     font-size: 15px; }
   .reproductor-info p {
-    font-size: 12px; }
-  .shuffle img, .repeat img, .volume img, .lyrics img, .queue img, .device img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain; }
-  .previous, .next {
-    font-size: 18px; }
-  .play img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain; } }
+    font-size: 12px; } }
 
 @media (max-width: 986px) {
   .logo {
@@ -304,6 +307,10 @@ mobile -> desktop: creciente.
     overflow: hidden;
     font-size: 12px; } }
 
+@media (max-width: 933px) {
+  .estreno {
+    height: 320px; } }
+
 @media (max-width: 880px) {
   .logo {
     gap: 10px; }
@@ -312,15 +319,24 @@ mobile -> desktop: creciente.
       font-size: 35px; }
   .navbar ul {
     gap: 10px;
-    font-size: 12px; }
+    font-size: 14px; }
   .buscador input {
     font-size: 10px; }
+  .estreno {
+    height: 330px; }
   .estreno-inf h3 {
-    font-size: 22px; }
+    font-size: 20px; }
   .estreno-inf p {
     font-size: 14px; }
   .controles-extra {
     font-size: 14px; } }
+
+@media (max-width: 830px) {
+  .navbar ul {
+    gap: 9px;
+    font-size: 13px; }
+  .estreno {
+    height: 310.672px; } }
 
 @media (max-width: 788px) {
   .logo {
@@ -334,32 +350,12 @@ mobile -> desktop: creciente.
   .navbar ul {
     gap: 10px;
     font-size: 12px; }
-  .buscador input {
-    font-size: 8px; }
-  .reproductor-info h3 {
-    width: 200px;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    line-clamp: 1;
-    overflow: hidden;
-    font-size: 15px; }
-  .reproductor-info p {
-    width: 200px;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    line-clamp: 1;
-    overflow: hidden;
-    font-size: 12px; }
   .controles, .controles-extra {
     gap: 8px; } }
 
 @media (max-width: 750px) {
   .estreno-inf h3 {
     font-size: 20px; }
-  .estreno-inf p {
-    font-size: 16px; }
   .cancion-4, .c-album-4 {
     display: none; }
   .cancion-info h4 {
@@ -368,18 +364,16 @@ mobile -> desktop: creciente.
     font-size: 14px; }
   .informacion {
     font-size: 14px; }
-  .shuffle, .repeat, .volume, .lyrics, .queue, .device {
-    font-size: 14px; }
-  .previous img, .next img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain; }
-  .play img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain; }
-  .controles-extra {
-    font-size: 12px; } }
+  .shuffle, .repeat {
+    font-size: 18px; }
+  .previous, .next {
+    font-size: 22px; }
+  .play {
+    font-size: 24px; }
+  .lyrics, .queue, .device {
+    font-size: 16px; }
+  .volume {
+    font-size: 14px; } }
 
 @media (max-width: 724px) {
   .logo {
@@ -431,7 +425,45 @@ mobile -> desktop: creciente.
     font-size: 12px; } }
 
 @media (max-width: 584px) {
+  .logo {
+    gap: 8px; }
+    .logo h1 {
+      font-family: capitan;
+      font-size: 24px; }
+    .logo a {
+      width: 35px;
+      height: 35px; }
+  .navbar ul {
+    padding-left: 4px;
+    gap: 8px;
+    font-size: 12px; }
   .estrenos h2 {
     font-size: 22px; }
   .seccion-canciones h3 {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .derechos {
+    display: inline-flex; } }
+
+@media (max-width: 542px) {
+  .logo {
+    gap: 8px; }
+    .logo h1 {
+      font-family: capitan;
+      font-size: 22px; }
+    .logo a {
+      width: 30px;
+      height: 30px; }
+  .navbar ul {
+    padding-left: 4px;
+    gap: 8px;
+    font-size: 12px; }
+  .controles {
+    padding-right: 40px; }
+  .menu {
+    display: block;
+    font-size: 16px; }
+  /* .controles-extra{
+        padding-right: 40px;
+    } */
+  .lyrics, .queue, .device, .volume {
+    display: none; } }

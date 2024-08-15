@@ -16,31 +16,6 @@
             font-size: 12px;
         }
     }
-    .buscador{
-        input{
-            font-size: 8px;
-        }
-    }
-    .reproductor-info{
-        h3{
-            width: 200px;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            line-clamp: 1;
-            overflow: hidden;
-            font-size: 15px;
-        }
-        p{
-            width: 200px;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            line-clamp: 1;
-            overflow: hidden;
-            font-size: 12px;
-        }
-    }
     .controles, .controles-extra {
         gap: 8px;
     }
