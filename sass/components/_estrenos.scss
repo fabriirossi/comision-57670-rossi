@@ -14,11 +14,13 @@
     border-radius: 16px;
     height: 395px;
     width: auto;
-    h3{
-        font-size: 22px;
-    }
     &:hover{
         background-color: rgba(255, 255, 255, 0.109);
+        transform: scale(1.02);
+        transition: transform 0.1s linear;
+    }
+    a{
+        text-decoration: none;
     }
 }
 .estreno-img{
@@ -28,4 +30,11 @@
 }
 .estreno-inf{
     padding-top: 10px;
+    h3{
+        font-size: 22px;
+        font-weight: 400;
+    }
+    p{
+        font-weight: 200;
+    }
 }

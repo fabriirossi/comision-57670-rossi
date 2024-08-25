@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.body {
+    background-color: black;
+    color: $colorLe;
+    font-family: "Poppins", sans-serif;
+}
+
 a{
     color: $colorLe;
     text-decoration: none;
@@ -12,8 +18,11 @@ a{
     }
 }
 
-.body {
-    background-color: black;
-    color: $colorLe;
-    font-family: "Poppins", sans-serif;
+h2{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.buscar{
+    display: none;
 }

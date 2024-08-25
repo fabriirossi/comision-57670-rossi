@@ -1,7 +1,7 @@
 .usuarios{
     div{
         display: flex;
-        font-size: 30px;
+        font-size: 26px;
         gap: 18px;
         align-items: center;
         padding: 10px;
@@ -10,6 +10,9 @@
             height: 200px;
             border-radius: 20px;
             object-fit: contain;
+        }
+        p{
+            font-weight: 300;
         }
     }
 }

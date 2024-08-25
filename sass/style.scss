@@ -20,20 +20,36 @@
 @import "./components/buscador";
 @import "./components/estrenos";
 @import "./components/sec-canciones";
+@import "./components/sec-articulos";
 @import "./components/usuarios";
 /*media
 desktop -> mobile: decreciente.
 mobile -> desktop: creciente.
 */
+@import "./layout/media/media1382px";
+@import "./layout/media/media1292px";
+@import "./layout/media/media1166px";
 @import "./layout/media/media1154px";
-@import "./layout/media/media1086px";
+@import "./layout/media/media1082px";
+@import "./layout/media/media1016px";
 @import "./layout/media/media986px";
+@import "./layout/media/media966px";
+@import "./layout/media/media950px";
 @import "./layout/media/media933px";
+@import "./layout/media/media910px";
 @import "./layout/media/media880px";
+@import "./layout/media/media870px";
 @import "./layout/media/media830px";
-@import "./layout/media/media788px";
+@import "./layout/media/media790px";
 @import "./layout/media/media750px";
 @import "./layout/media/media724px";
+@import "./layout/media/media705px";
 @import "./layout/media/media690px";
-@import "./layout/media/media584px";
+@import "./layout/media/media675px";
+@import "./layout/media/media645px";
+@import "./layout/media/media615px";
+@import "./layout/media/media585px";
+@import "./layout/media/media555px";
 @import "./layout/media/media542px";
+@import "./layout/media/media515px";
+@import "./layout/media/media500px";

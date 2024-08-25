@@ -1,0 +1,18 @@
+@media (max-width: 870px) {
+    .contenedor-canciones{
+        grid-template-columns: repeat(4, 170px);
+    }
+    .cancion{
+        width: 170px;
+        height: 250px;
+    }
+    .cancion-info{
+        padding-top: 6px;
+        h4{
+            font-size: 17px;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+}

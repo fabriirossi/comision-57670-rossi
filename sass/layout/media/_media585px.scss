@@ -1,0 +1,17 @@
+@media (max-width:585px){
+    .navbar {
+        ul {
+            padding-left: 4px;
+            gap: 8px;
+            font-size: 12px;
+        }
+    }
+    .contenedor-canciones{
+        grid-template-columns: repeat(3, 140px);
+        grid-template-rows: repeat(2, 220px);
+    }
+    .cancion{
+        width: 140px;
+        height: 220px;
+    }
+}

@@ -1,23 +1,14 @@
 @media(max-width: 724px){
-    .logo {
-        gap: 10px;
-        h1{
-            font-family: capitan;
-            font-size: 26px;
-        }
-        a{
-            width: 40px;
-            height: 40px;
-        }
-    }
     .navbar {
+        padding: 0;
+        margin: 4px;
         ul {
-            gap: 8px;
-            font-size: 12px;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(2, auto);
+            gap: 10px;
+            font-size: 14px;
         }
-    }
-    .buscador{
-        display: none;
     }
     .estreno{
         width: 200px;

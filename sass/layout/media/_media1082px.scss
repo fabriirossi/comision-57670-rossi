@@ -1,7 +1,4 @@
-@media (max-width: 1086px){
-    .cancion-6, .c-album-6{
-        display:none;
-    }
+@media (max-width: 1082px){
     .estreno{
         width: auto;
         height: 350px;
@@ -34,4 +31,14 @@
             font-size: 12px;
         }
     }
+    .contenedor-canciones{
+        grid-template-columns: repeat(5, 170px);
+    }
+    .cancion{
+        width: 170px;
+        height: 250px;
+    }
+    /* .cancion-imagen {
+        height: 60%;
+    } */
 }

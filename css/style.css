@@ -10,16 +10,23 @@
   padding: 0;
   box-sizing: border-box; }
 
+.body {
+  background-color: black;
+  color: #ECF0F1;
+  font-family: "Poppins", sans-serif; }
+
 a {
   color: #ECF0F1;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
 
-.body {
-  background-color: black;
-  color: #ECF0F1;
-  font-family: "Poppins", sans-serif; }
+h2 {
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.buscar {
+  display: none; }
 
 /*layout*/
 .header {
@@ -31,6 +38,15 @@ a {
   border-radius: 16px;
   background-color: #141414; }
 
+/* .header {
+    display: grid;
+    grid-template: repeat(1, 1fr)/ repeat(3, 270px 500px 270px);
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: $colorPr;
+} */
 .main {
   margin: 10px;
   background-color: #141414;
@@ -167,16 +183,23 @@ a {
   border-radius: 16px;
   height: 395px;
   width: auto; }
-  .estreno h3 {
-    font-size: 22px; }
   .estreno:hover {
-    background-color: rgba(255, 255, 255, 0.109); }
+    background-color: rgba(255, 255, 255, 0.109);
+    transform: scale(1.02);
+    transition: transform 0.1s linear; }
+  .estreno a {
+    text-decoration: none; }
 
 .estreno-img img {
   border-radius: 16px; }
 
 .estreno-inf {
   padding-top: 10px; }
+  .estreno-inf h3 {
+    font-size: 22px;
+    font-weight: 400; }
+  .estreno-inf p {
+    font-weight: 200; }
 
 .seccion-canciones {
   padding: 16px; }
@@ -185,7 +208,8 @@ a {
 
 .contenedor-canciones {
   margin: 10px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
   justify-content: space-between;
   gap: 16px; }
 
@@ -194,6 +218,8 @@ a {
   height: 280px;
   padding: 16px; }
   .cancion:hover {
+    transform: scale(1.03);
+    transition: transform 0.1s linear;
     background-color: rgba(255, 255, 255, 0.109);
     border-radius: 16px; }
 
@@ -225,9 +251,19 @@ a {
     overflow: hidden;
     line-clamp: 2; }
 
+.sec-articulos {
+  margin: 8px;
+  padding: 8px; }
+
+.articulo {
+  margin: 8px;
+  padding: 8px; }
+  .articulo p {
+    font-weight: 300; }
+
 .usuarios div {
   display: flex;
-  font-size: 30px;
+  font-size: 26px;
   gap: 18px;
   align-items: center;
   padding: 10px; }
@@ -236,11 +272,45 @@ a {
     height: 200px;
     border-radius: 20px;
     object-fit: contain; }
+  .usuarios div p {
+    font-weight: 300; }
 
 /*media
 desktop -> mobile: decreciente.
 mobile -> desktop: creciente.
 */
+@media (max-width: 1382px) {
+  .contenedor-canciones {
+    grid-template-columns: repeat(5, 225px); }
+  .cancion-6, .c-album-6 {
+    display: none; }
+  .cancion {
+    width: 225px;
+    height: 305px; } }
+
+@media (max-width: 1292px) {
+  .contenedor-canciones {
+    grid-template-columns: repeat(5, 200px); }
+  .cancion {
+    width: 200px;
+    height: 280px; } }
+
+@media (max-width: 1166px) {
+  .contenedor-canciones {
+    grid-template-columns: repeat(5, 180px); }
+  .cancion {
+    width: 180px;
+    height: 260px; }
+  /* .cancion-imagen {
+        height: 60%;
+    } */
+  .cancion-info {
+    padding-top: 6px; }
+    .cancion-info h4 {
+      font-size: 18px; }
+    .cancion-info p {
+      font-size: 14px; } }
+
 @media (max-width: 1154px) {
   .logo {
     gap: 10px; }
@@ -252,9 +322,7 @@ mobile -> desktop: creciente.
   .buscador input {
     font-size: 14px; } }
 
-@media (max-width: 1086px) {
-  .cancion-6, .c-album-6 {
-    display: none; }
+@media (max-width: 1082px) {
   .estreno {
     width: auto;
     height: 350px; }
@@ -275,7 +343,28 @@ mobile -> desktop: creciente.
   .reproductor-info h3 {
     font-size: 15px; }
   .reproductor-info p {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .contenedor-canciones {
+    grid-template-columns: repeat(5, 170px); }
+  .cancion {
+    width: 170px;
+    height: 250px; }
+  /* .cancion-imagen {
+        height: 60%;
+    } */ }
+
+@media (max-width: 1016px) {
+  .contenedor-canciones {
+    grid-template-columns: repeat(5, 160px); }
+  .cancion {
+    width: 160px;
+    height: 240px; }
+  .cancion-info {
+    padding-top: 6px; }
+    .cancion-info h4 {
+      font-size: 17px; }
+    .cancion-info p {
+      font-size: 13px; } }
 
 @media (max-width: 986px) {
   .logo {
@@ -288,8 +377,6 @@ mobile -> desktop: creciente.
     font-size: 14px; }
   .buscador input {
     font-size: 12px; }
-  .cancion-5, .c-album-5 {
-    display: none; }
   .reproductor-info h3 {
     width: 250px;
     display: -webkit-box;
@@ -307,9 +394,38 @@ mobile -> desktop: creciente.
     overflow: hidden;
     font-size: 12px; } }
 
+@media (max-width: 966px) {
+  .contenedor-canciones {
+    grid-template-columns: repeat(4, 200px); }
+  .cancion {
+    width: 200px;
+    height: 280px; }
+  .cancion-5, .c-album-5 {
+    display: none; }
+  .cancion-info {
+    padding-top: 6px; }
+    .cancion-info h4 {
+      font-size: 18px; }
+    .cancion-info p {
+      font-size: 14px; } }
+
+@media (max-width: 950px) {
+  .contenedor-canciones {
+    grid-template-columns: repeat(4, 190px); }
+  .cancion {
+    width: 190px;
+    height: 270px; } }
+
 @media (max-width: 933px) {
   .estreno {
     height: 320px; } }
+
+@media (max-width: 910px) {
+  .contenedor-canciones {
+    grid-template-columns: repeat(4, 180px); }
+  .cancion {
+    width: 180px;
+    height: 260px; } }
 
 @media (max-width: 880px) {
   .logo {
@@ -331,14 +447,32 @@ mobile -> desktop: creciente.
   .controles-extra {
     font-size: 14px; } }
 
+@media (max-width: 870px) {
+  .contenedor-canciones {
+    grid-template-columns: repeat(4, 170px); }
+  .cancion {
+    width: 170px;
+    height: 250px; }
+  .cancion-info {
+    padding-top: 6px; }
+    .cancion-info h4 {
+      font-size: 17px; }
+    .cancion-info p {
+      font-size: 13px; } }
+
 @media (max-width: 830px) {
   .navbar ul {
     gap: 9px;
     font-size: 13px; }
   .estreno {
-    height: 310.672px; } }
+    height: 310.672px; }
+  .contenedor-canciones {
+    grid-template-columns: repeat(4, 160px); }
+  .cancion {
+    width: 160px;
+    height: 240px; } }
 
-@media (max-width: 788px) {
+@media (max-width: 790px) {
   .logo {
     gap: 10px; }
     .logo h1 {
@@ -350,18 +484,33 @@ mobile -> desktop: creciente.
   .navbar ul {
     gap: 10px;
     font-size: 12px; }
+  .estrenos h2, .seccion-canciones h2 {
+    font-size: 24px; }
   .controles, .controles-extra {
-    gap: 8px; } }
+    gap: 8px; }
+  .contenedor-canciones {
+    grid-template-columns: repeat(4, 150px); }
+  .cancion {
+    width: 150px;
+    height: 230px; } }
 
 @media (max-width: 750px) {
   .estreno-inf h3 {
     font-size: 20px; }
-  .cancion-4, .c-album-4 {
-    display: none; }
+  .contenedor-canciones {
+    grid-template-columns: repeat(3, 190px);
+    grid-template-rows: repeat(2, 270px); }
+  .cancion {
+    width: 190px;
+    height: 270px; }
+  .cancion-6, .cancion-5, .c-album-6, .c-album-5 {
+    display: block; }
   .cancion-info h4 {
     font-size: 18px; }
   .cancion-info p {
     font-size: 14px; }
+  .usuarios div {
+    font-size: 22px; }
   .informacion {
     font-size: 14px; }
   .shuffle, .repeat {
@@ -376,19 +525,15 @@ mobile -> desktop: creciente.
     font-size: 14px; } }
 
 @media (max-width: 724px) {
-  .logo {
-    gap: 10px; }
-    .logo h1 {
-      font-family: capitan;
-      font-size: 26px; }
-    .logo a {
-      width: 40px;
-      height: 40px; }
-  .navbar ul {
-    gap: 8px;
-    font-size: 12px; }
-  .buscador {
-    display: none; }
+  .navbar {
+    padding: 0;
+    margin: 4px; }
+    .navbar ul {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);
+      gap: 10px;
+      font-size: 14px; }
   .estreno {
     width: 200px;
     height: 280px; }
@@ -406,9 +551,37 @@ mobile -> desktop: creciente.
   .controles, .controles-extra {
     gap: 4px; } }
 
+@media (max-width: 705px) {
+  .navbar ul {
+    display: flex; }
+  .buscador {
+    display: none; }
+  .buscar {
+    display: block;
+    background: none;
+    border: none;
+    color: white; }
+  .contenedor-canciones {
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(2, 260px); }
+  .cancion {
+    width: 180px;
+    height: 260px; }
+  .cancion-info h4 {
+    font-size: 17px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 1; }
+  .cancion-info p {
+    font-size: 13px; }
+  .informacion div p {
+    font-size: 13px; } }
+
 @media (max-width: 690px) {
   .reproductor-info h3 {
-    width: 100px;
+    width: 60px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -416,43 +589,85 @@ mobile -> desktop: creciente.
     overflow: hidden;
     font-size: 15px; }
   .reproductor-info p {
-    width: 100px;
+    width: 60px;
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    line-clamp: 1;
+    line-clamp: 2;
     overflow: hidden;
     font-size: 12px; } }
 
-@media (max-width: 584px) {
-  .logo {
-    gap: 8px; }
-    .logo h1 {
-      font-family: capitan;
-      font-size: 24px; }
-    .logo a {
-      width: 35px;
-      height: 35px; }
+@media (max-width: 675px) {
+  .estreno {
+    height: auto;
+    width: 300px; }
+  .estreno-img {
+    height: 80%; }
+  .estreno3 {
+    display: none; }
+  .contenedor-canciones {
+    grid-template-columns: repeat(3, 170px);
+    grid-template-rows: repeat(2, 250px); }
+  .cancion {
+    width: 170px;
+    height: 250px; } }
+
+@media (max-width: 645px) {
+  .navbar ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto); }
+  .buscar {
+    font-size: 16px; }
+  .contenedor-canciones {
+    grid-template-columns: repeat(3, 160px);
+    grid-template-rows: repeat(2, 240px); }
+  .cancion {
+    width: 160px;
+    height: 240px; } }
+
+@media (max-width: 615px) {
+  .contenedor-canciones {
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, 230px); }
+  .cancion {
+    width: 150px;
+    height: 230px; }
+  .usuarios div {
+    font-size: 18px; }
+    .usuarios div img {
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      object-fit: contain; } }
+
+@media (max-width: 585px) {
   .navbar ul {
     padding-left: 4px;
     gap: 8px;
     font-size: 12px; }
-  .estrenos h2 {
-    font-size: 22px; }
-  .seccion-canciones h3 {
-    font-size: 22px; }
-  .derechos {
-    display: inline-flex; } }
+  .contenedor-canciones {
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(2, 220px); }
+  .cancion {
+    width: 140px;
+    height: 220px; } }
+
+@media (max-width: 555px) {
+  .contenedor-canciones {
+    grid-template-columns: repeat(3, 135px);
+    grid-template-rows: repeat(2, 215px); }
+  .cancion {
+    width: 135px;
+    height: 215px; }
+  .cancion-info h4 {
+    font-size: 15px; }
+  .cancion-info p {
+    font-size: 13px; }
+  .usuarios div {
+    font-size: 16px; } }
 
 @media (max-width: 542px) {
-  .logo {
-    gap: 8px; }
-    .logo h1 {
-      font-family: capitan;
-      font-size: 22px; }
-    .logo a {
-      width: 30px;
-      height: 30px; }
   .navbar ul {
     padding-left: 4px;
     gap: 8px;
@@ -462,8 +677,27 @@ mobile -> desktop: creciente.
   .menu {
     display: block;
     font-size: 16px; }
-  /* .controles-extra{
-        padding-right: 40px;
-    } */
   .lyrics, .queue, .device, .volume {
     display: none; } }
+
+@media (max-width: 515px) {
+  .contenedor-canciones {
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(2, 210px); }
+  .cancion {
+    width: 130px;
+    height: 210px; }
+  .cancion-info h4 {
+    font-size: 14px; }
+  .cancion-info p {
+    font-size: 12px; } }
+
+@media (max-width: 500px) {
+  .logo {
+    gap: 8px; }
+    .logo h1 {
+      font-family: capitan;
+      font-size: 26px; }
+    .logo a {
+      width: 42px;
+      height: 42px; } }

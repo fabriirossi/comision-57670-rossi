@@ -4,8 +4,16 @@
             font-size: 20px;
         }
     }
-    .cancion-4, .c-album-4{
-        display: none;
+    .contenedor-canciones{
+        grid-template-columns: repeat(3, 190px);
+        grid-template-rows: repeat(2, 270px);
+    }
+    .cancion{
+        width: 190px;
+        height: 270px;
+    }
+    .cancion-6, .cancion-5, .c-album-6, .c-album-5{
+        display: block;
     }
     .cancion-info{
         h4{
@@ -13,6 +21,11 @@
         }
         p{
             font-size: 14px;
+        }
+    }
+    .usuarios{
+        div{
+            font-size: 22px;
         }
     }
     .informacion{

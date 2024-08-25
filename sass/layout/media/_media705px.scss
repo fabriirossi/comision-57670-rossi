@@ -1,0 +1,44 @@
+@media (max-width: 705px){
+    .navbar {
+        ul {
+            display: flex;
+        }
+    }
+    .buscador{
+        display: none;
+    }
+    .buscar{
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+    }
+    .contenedor-canciones{
+        grid-template-columns: repeat(3, 180px);
+        grid-template-rows: repeat(2, 260px);
+    }
+    .cancion{
+        width: 180px;
+        height: 260px;
+    }
+    .cancion-info{
+        h4{
+            font-size: 17px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-clamp: 1
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+    .informacion{
+        div{
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+}

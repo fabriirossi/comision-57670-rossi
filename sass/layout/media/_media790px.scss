@@ -1,4 +1,4 @@
-@media (max-width: 788px){
+@media (max-width: 790px){
     .logo {
         gap: 10px;
         h1{
@@ -16,7 +16,19 @@
             font-size: 12px;
         }
     }
+    .estrenos, .seccion-canciones{
+        h2{
+            font-size: 24px;
+        }
+    }
     .controles, .controles-extra {
         gap: 8px;
+    }
+    .contenedor-canciones{
+        grid-template-columns: repeat(4, 150px);
+    }
+    .cancion{
+        width: 150px;
+        height: 230px;
     }
 }

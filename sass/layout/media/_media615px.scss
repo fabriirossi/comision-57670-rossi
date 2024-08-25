@@ -1,0 +1,21 @@
+@media (max-width:615px){
+    .contenedor-canciones{
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(2, 230px);
+    }
+    .cancion{
+        width: 150px;
+        height: 230px;
+    }
+    .usuarios{
+        div{
+            font-size: 18px;
+            img{
+                width: 150px;
+                height: 150px;
+                border-radius: 20px;
+                object-fit: contain;
+            }
+        }
+    }
+}
