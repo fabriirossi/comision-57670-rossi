@@ -1,0 +1,6 @@
+@media (max-width:555px){
+    .contenedor-canciones{
+        grid-template-columns: repeat(2, 135px);
+        grid-template-rows: repeat(3, 215px);
+    }
+}
